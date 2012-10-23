@@ -21,6 +21,7 @@
     <ClCompile Include="..\..\dep\lua-5.2.1\src\liolib.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lmathlib.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\loadlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\loslib.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lstrlib.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\ltablib.c" />
   </ItemGroup>

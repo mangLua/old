@@ -89,11 +89,15 @@
   <ItemGroup>
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lapi.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lcode.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lcorolib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lctype.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldblib.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\ldebug.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\ldo.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\ldump.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lfunc.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lgc.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\linit.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\llex.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lmem.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lobject.c" />
@@ -103,6 +107,8 @@
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lstring.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\ltable.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\ltm.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lua.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lundump.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lvm.c" />
     <ClCompile Include="..\..\dep\lua-5.2.1\src\lzio.c" />
   </ItemGroup>

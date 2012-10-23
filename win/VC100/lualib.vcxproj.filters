@@ -47,5 +47,8 @@
     <ClCompile Include="..\..\dep\lua-5.2.1\src\ltablib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\loslib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
