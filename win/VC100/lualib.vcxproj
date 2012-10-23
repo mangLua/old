@@ -10,6 +10,20 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lauxlib.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lualib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lauxlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lbaselib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lbitlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\liolib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lmathlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\loadlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lstrlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ltablib.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3680C14A-FF0B-497F-B473-A3C18C4822EA}</ProjectGuid>
     <RootNamespace>lualib</RootNamespace>
@@ -70,8 +84,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
