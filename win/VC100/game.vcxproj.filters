@@ -40,6 +40,9 @@
     <Filter Include="Warden">
       <UniqueIdentifier>{d88fe105-61c5-46b8-b008-c467a7b1b202}</UniqueIdentifier>
     </Filter>
+    <Filter Include="mangLua">
+      <UniqueIdentifier>{d1d6dd1e-1e14-446a-ab9f-bcae990f5637}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\game\AccountMgr.cpp">
@@ -532,6 +535,9 @@
     <ClCompile Include="..\..\src\game\Warden\WardenWin.cpp">
       <Filter>Warden</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\game\mangLua\mangLua.cpp">
+      <Filter>mangLua</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\game\AccountMgr.h">
@@ -1011,6 +1017,9 @@
     </ClInclude>
     <ClInclude Include="..\..\src\game\Warden\WardenWin.h">
       <Filter>Warden</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\mangLua.h">
+      <Filter>mangLua</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
