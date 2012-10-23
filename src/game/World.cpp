@@ -66,6 +66,7 @@
 #include "CharacterDatabaseCleaner.h"
 #include "CreatureLinkingMgr.h"
 #include "Warden/WardenDataStorage.h"
+#include "mangLua/mangLua.h"
 
 INSTANTIATE_SINGLETON_1(World);
 
@@ -1262,6 +1263,8 @@ void World::SetInitialWorldSettings()
 
     sLog.outString("Loading CreatureEventAI Scripts...");
     sEventAIMgr.LoadCreatureEventAI_Scripts();
+
+    smangLua.LoadEngine();
 
     sLog.outString("Initializing Scripts...");
     switch (sScriptMgr.LoadScriptLibrary(MANGOS_SCRIPT_NAME))

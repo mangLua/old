@@ -15,3 +15,29 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
+
+#include "Policies/Singleton.h"
+
+#define CONSOLE_HEADER "[mangLua 0.1]"
+
+extern "C" {
+    #include <lua.h>
+    #include <lualib.h>
+    #include <lauxlib.h>
+};
+
+struct LoadedScripts
+{
+    std::set<std::string> luaFiles;
+};
+
+class mangLua
+{
+public:
+    void LoadEngine();
+    void LoadDirectory(char* Dirname, LoadedScripts* lscr);
+
+private:
+};
+
+#define smangLua MaNGOS::Singleton<mangLua>::Instance()
