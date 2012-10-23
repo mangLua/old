@@ -38,7 +38,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetExt>.lib</TargetExt>
-    <OutDir>.\lua__$(Platform)_$(Configuration)\ </OutDir>
+    <OutDir>.\lua__$(Platform)_$(Configuration)\</OutDir>
     <IntDir>.\lua__$(Platform)_$(Configuration)\</IntDir>
     <TargetName>lua</TargetName>
   </PropertyGroup>
@@ -65,6 +65,46 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lapi.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lcode.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\ldebug.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\ldo.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lfunc.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lgc.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\llex.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\llimits.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lmem.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lobject.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lopcodes.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lparser.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lstate.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lstring.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\ltable.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\ltm.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lua.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lundump.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lvm.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lzio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lapi.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lcode.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldebug.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldo.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldump.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lfunc.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lgc.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\llex.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lmem.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lobject.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lopcodes.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lparser.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lstate.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lstring.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ltable.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ltm.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lvm.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lzio.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
