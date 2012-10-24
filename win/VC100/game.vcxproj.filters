@@ -43,6 +43,9 @@
     <Filter Include="mangLua">
       <UniqueIdentifier>{d1d6dd1e-1e14-446a-ab9f-bcae990f5637}</UniqueIdentifier>
     </Filter>
+    <Filter Include="mangLua\Functions">
+      <UniqueIdentifier>{336e437d-cbb4-46e1-bb80-32a7388835e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\game\AccountMgr.cpp">
@@ -1019,6 +1022,36 @@
       <Filter>Warden</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\game\mangLua\mangLua.h">
+      <Filter>mangLua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\Functions\AuraFunctions.h">
+      <Filter>mangLua\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\Functions\FunctionTables.h">
+      <Filter>mangLua\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\Functions\GameobjectFunctions.h">
+      <Filter>mangLua\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\Functions\GlobalFunctions.h">
+      <Filter>mangLua\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\Functions\ItemFunctions.h">
+      <Filter>mangLua\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\Functions\PacketFunctions.h">
+      <Filter>mangLua\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\Functions\SpellFunctions.h">
+      <Filter>mangLua\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\Functions\TaxiFunctions.h">
+      <Filter>mangLua\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\Functions\UnitFunctions.h">
+      <Filter>mangLua\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\mangLua\mangLuaFunctions.h">
       <Filter>mangLua</Filter>
     </ClInclude>
   </ItemGroup>

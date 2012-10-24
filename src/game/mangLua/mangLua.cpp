@@ -17,8 +17,10 @@
  */
 
 #include "mangLua.h"
-#include "Chat.h"
 #include "Policies/SingletonImp.h"
+#include "Chat.h"
+#include "mangLuaFunctions.h"
+#include "FunctionTables.h"
 
 INSTANTIATE_SINGLETON_1(mangLua);
 
