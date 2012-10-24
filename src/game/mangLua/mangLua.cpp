@@ -24,6 +24,17 @@
 
 INSTANTIATE_SINGLETON_1(mangLua);
 
+void mangLua::report(lua_State* L)
+{
+    const char* msg = lua_tostring(L, -1);
+    while(msg)
+    {
+        lua_pop(L, -1);
+        printf("\t%s\n",msg);
+        msg = lua_tostring(L, -1);
+    }
+}
+
 void mangLua::LoadDirectory(char* Dirname, LoadedScripts* lscr)
 {
     sLog.outString("[mangLua]: Scanning lua_scripts/.");

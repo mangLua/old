@@ -29,15 +29,17 @@ struct LoadedScripts
     std::set<std::string> luaFiles;
 };
 
+
 class mangLua
 {
-public:
+private:
     lua_State* L;
 
+public:
     void LoadEngine();
     void LoadDirectory(char* Dirname, LoadedScripts* lscr);
 
-private:
+    static void report(lua_State* /*L*/);
 };
 
 #define smangLua MaNGOS::Singleton<mangLua>::Instance()
