@@ -1264,8 +1264,6 @@ void World::SetInitialWorldSettings()
     sLog.outString("Loading CreatureEventAI Scripts...");
     sEventAIMgr.LoadCreatureEventAI_Scripts();
 
-    smangLua.LoadEngine();
-
     sLog.outString("Initializing Scripts...");
     switch (sScriptMgr.LoadScriptLibrary(MANGOS_SCRIPT_NAME))
     {
@@ -1282,6 +1280,10 @@ void World::SetInitialWorldSettings()
             sLog.outError("Scripting library build for old mangosd revision. You need rebuild it.");
             break;
     }
+
+    ///- Start mangLua System
+    sLog.outString("Loading mangLua System...");
+    smangLua.LoadEngine();
 
     ///- Initialize game time and timers
     sLog.outString("DEBUG:: Initialize game time and timers");
