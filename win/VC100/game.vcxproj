@@ -162,7 +162,7 @@
     </ResourceCompile>
     <Lib>
       <AdditionalDependencies>.\shared__$(Platform)_$(Configuration)\shared.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalDependencies>.\g3dlite__$(Platform)_$(Configuration)\g3dlite.lib;.\lua__$(Platform)_$(Configuration)\lua.lib;.\lualib__$(Platform)_$(Configuration)\lualib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>.\g3dlite__$(Platform)_$(Configuration)\g3dlite.lib;.\lua__$(Platform)_$(Configuration)\lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
   </ItemDefinitionGroup>

@@ -10,6 +10,69 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lapi.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lauxlib.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lcode.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lctype.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\ldebug.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\ldo.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lfunc.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lgc.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\llex.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\llimits.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lmem.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lobject.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lopcodes.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lparser.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lstate.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lstring.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\ltable.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\ltm.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lua.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lua.hpp" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\luaconf.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lualib.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lundump.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lvm.h" />
+    <ClInclude Include="..\..\dep\lua-5.2.1\src\lzio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lapi.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lauxlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lbaselib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lbitlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lcode.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lcorolib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lctype.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldblib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldebug.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldo.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldump.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lfunc.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lgc.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\linit.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\liolib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\llex.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lmathlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lmem.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\loadlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lobject.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lopcodes.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\loslib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lparser.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lstate.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lstring.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lstrlib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ltable.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ltablib.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\ltm.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lua.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\luac.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lundump.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lvm.c" />
+    <ClCompile Include="..\..\dep\lua-5.2.1\src\lzio.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{305B28BB-0695-4128-A1E4-8A874173F438}</ProjectGuid>
     <RootNamespace>lua</RootNamespace>
@@ -64,54 +127,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lapi.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lcode.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\ldebug.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\ldo.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lfunc.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lgc.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\llex.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\llimits.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lmem.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lobject.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lopcodes.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lparser.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lstate.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lstring.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\ltable.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\ltm.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lua.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lundump.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lvm.h" />
-    <ClInclude Include="..\..\dep\lua-5.2.1\src\lzio.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lapi.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lcode.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lcorolib.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lctype.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldblib.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldebug.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldo.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\ldump.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lfunc.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lgc.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\linit.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\llex.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lmem.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lobject.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lopcodes.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lparser.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lstate.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lstring.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\ltable.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\ltm.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lua.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lundump.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lvm.c" />
-    <ClCompile Include="..\..\dep\lua-5.2.1\src\lzio.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
