@@ -24,6 +24,13 @@
 
 INSTANTIATE_SINGLETON_1(mangLua);
 
+void mangLua::Start()
+{
+    L = luaL_newstate();
+
+    LoadEngine();
+}
+
 void mangLua::report(lua_State* L)
 {
     const char* msg = lua_tostring(L, -1);
@@ -96,7 +103,6 @@ void mangLua::LoadDirectory(char* Dirname, LoadedScripts* lscr)
 
 void mangLua::LoadEngine()
 {
-    L = luaL_newstate();
     luaL_openlibs(L);
 
     LoadedScripts lscr;

@@ -36,6 +36,7 @@ private:
     lua_State* L;
 
 public:
+    void Start();
     void LoadEngine();
     void LoadDirectory(char* Dirname, LoadedScripts* lscr);
 

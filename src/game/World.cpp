@@ -1283,7 +1283,7 @@ void World::SetInitialWorldSettings()
 
     ///- Start mangLua System
     sLog.outString("Starting mangLua System...");
-    smangLua.LoadEngine();
+    smangLua.Start();
 
     ///- Initialize game time and timers
     sLog.outString("DEBUG:: Initialize game time and timers");
