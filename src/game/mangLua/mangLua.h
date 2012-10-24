@@ -18,8 +18,6 @@
 
 #include "Policies/Singleton.h"
 
-#define CONSOLE_HEADER "[mangLua 0.1]"
-
 extern "C" {
     #include <lua.h>
     #include <lualib.h>
@@ -34,6 +32,8 @@ struct LoadedScripts
 class mangLua
 {
 public:
+    lua_State* L;
+
     void LoadEngine();
     void LoadDirectory(char* Dirname, LoadedScripts* lscr);
 

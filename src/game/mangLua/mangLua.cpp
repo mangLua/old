@@ -24,7 +24,7 @@ INSTANTIATE_SINGLETON_1(mangLua);
 
 void mangLua::LoadDirectory(char* Dirname, LoadedScripts* lscr)
 {
-    sLog.outBasic("[Lua]: Scanning lua_scripts/.");
+    sLog.outString("[mangLua]: Scanning lua_scripts/.");
     #ifdef WIN32
         HANDLE hFile;
         WIN32_FIND_DATA FindData;
@@ -33,22 +33,21 @@ void mangLua::LoadDirectory(char* Dirname, LoadedScripts* lscr)
 
         strcpy(SearchName, Dirname);
         strcat(SearchName, "\\*.*");
-        sLog.outBasic("[Lua]: Searchdir: %s",SearchName);
+        sLog.outString("[mangLua]: Searchdir: %s",SearchName);
         hFile = FindFirstFile(SearchName, &FindData);
 
         if(hFile == INVALID_HANDLE_VALUE)
         {
-            sLog.outError("%s No `lua_scripts` directory found!", CONSOLE_HEADER);
+            sLog.outError("[mangLua]: %s No `lua_scripts` directory found!");
             return;
         }
-        sLog.outBasic("[Lua]: If we got here, we found something: %s",FindData.cFileName);
 
         FindNextFile(hFile, &FindData);
         while( FindNextFile(hFile, &FindData) )
         {
             if(FindData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
             {
-                sLog.outBasic("[Lua]: Directory: %s",FindData.cFileName);
+                sLog.outString("[mangLua]: Directory: %s",FindData.cFileName);
                 strcpy(SearchName,Dirname);
                 strcat(SearchName, "\\");
                 strcat(SearchName, FindData.cFileName);
@@ -56,12 +55,12 @@ void mangLua::LoadDirectory(char* Dirname, LoadedScripts* lscr)
             }
             else
             {
-                sLog.outBasic("[Lua]: File1: %s",FindData.cFileName);
+                sLog.outString("[mangLua]: File: %s",FindData.cFileName);
                 std::string fname = Dirname;
                 fname += "\\";
                 fname += FindData.cFileName;
                 size_t len = strlen(fname.c_str());
-                sLog.outBasic("[Lua]: File2: %s",fname.c_str());
+
                 int i = 0;
                 char ext[MAX_PATH];
                 while(len > 0)
@@ -73,7 +72,7 @@ void mangLua::LoadDirectory(char* Dirname, LoadedScripts* lscr)
                 ext[i++] = '\0';
                 if(!_stricmp(ext,"aul."))
                 {
-                   sLog.outBasic("[Lua]: Adding File: %s",fname.c_str());
+                   sLog.outString("[mangLua]: Adding File: %s",fname.c_str());
                    lscr->luaFiles.insert(fname);
                 }
             }
@@ -84,17 +83,15 @@ void mangLua::LoadDirectory(char* Dirname, LoadedScripts* lscr)
 
 void mangLua::LoadEngine()
 {
-    lua_State* L;
-
     L = luaL_newstate();
     luaL_openlibs(L);
 
     LoadedScripts lscr;
     LoadDirectory("lua_scripts", &lscr);
 
-    sLog.outBasic("LoadDirectory complete");
-    sLog.outBasic("Files loaded: %i",lscr.luaFiles.size());
-    sLog.outBasic("LoadEngine complete");
+    sLog.outString("[mangLua]: LoadDirectory complete");
+    sLog.outString("[mangLua]: Files loaded: %i",lscr.luaFiles.size());
+    sLog.outString("[mangLua]: LoadEngine complete");
 
     char filename[200];
     unsigned int cnt_uncomp = 0;
@@ -105,18 +102,18 @@ void mangLua::LoadEngine()
 
         if (luaL_loadfile(L, filename) != 0)
         {
-            sLog.outError("loading %s failed.(could not load)", itr->c_str());
+            sLog.outError("[mangLua]: loading %s failed.(could not load)", itr->c_str());
         }
         else
         {
         if (lua_pcall(L, 0, 0, 0) != 0)
         {
-            sLog.outError("%s failed.(could not run)", itr->c_str());
+            sLog.outError("[mangLua]: %s failed.(could not run)", itr->c_str());
         }
         else
-            sLog.outBasic("loaded %s.", itr->c_str());
+            sLog.outString("[mangLua]: loaded %s.", itr->c_str());
         }
         cnt_uncomp++;
     }
-    sLog.outBasic("Loaded %i Lua scripts.", cnt_uncomp);
+    sLog.outString("[mangLua]: Loaded %i Lua scripts.", cnt_uncomp);
 }
